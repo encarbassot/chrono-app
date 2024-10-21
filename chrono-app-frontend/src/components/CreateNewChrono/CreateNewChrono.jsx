@@ -21,6 +21,8 @@ export default function CreateNewChrono({}){
 
   function createTimer(){
     addTimer(inpName || ("Timer-"+(timers.length+1)),inpColor)
+    setInpName("")
+    setInpColor("#293881")
     setIsopen(false)
   }
 

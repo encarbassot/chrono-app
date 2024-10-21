@@ -2,6 +2,7 @@
 
 
 import { useChrono } from "../../context/ChronoContext"
+import TimerCard from "./TimerCard/TimerCard"
 import "./TimersList.css"
 
 
@@ -16,12 +17,17 @@ export default function TimersList(){
   return (
     <div className="TimersList">
 
-      {timers.map(({name,color})=>{
+      <div className="TimersListContent">
 
-        return(
-          <div style={{background:color}}>{name}</div>
-        )
-      })}
+        {timers.map((timer,i)=>{
+
+          return(
+            // <div className="TimerCard" style={{background:color}}>{name}</div>
+            <TimerCard key={i} timer={timer} index={i}/>
+          )
+        })}
+      </div>
+
 
     </div>
   )
