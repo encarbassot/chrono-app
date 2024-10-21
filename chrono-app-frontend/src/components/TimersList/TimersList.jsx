@@ -19,7 +19,7 @@ export default function TimersList(){
       {timers.map(({name,color})=>{
 
         return(
-          <p style={{background:color}}>{name}</p>
+          <div style={{background:color}}>{name}</div>
         )
       })}
 
