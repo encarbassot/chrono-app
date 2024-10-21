@@ -1,0 +1,162 @@
+.CreateNewChrono--button {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 100px;
+  height: 100px;
+
+  background-color: #452791;
+
+  border-radius: 50%;
+
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  cursor: pointer;
+  border: none;
+
+  border: 3px solid transparent;
+  transition: transform 0.2s ease-in-out, border-width 0.2s ease-in-out, bottom 0.2s ease-in-out;
+
+  box-sizing: unset;
+
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+
+}
+
+.CreateNewChrono--button.open {
+  bottom: -200px;
+}
+
+.CreateNewChrono--button img {
+  width: 80%;
+  height: 80%;
+}
+
+.CreateNewChrono--button:hover {
+  transform: scale(1.05);
+  border-width: 3px 3px 10px 3px;
+  border-color: gray;
+}
+
+.CreateNewChrono--button:active {
+  border-width: 10px 3px 0 3px;
+  border-color: gray;
+  transform: scale(0.95);
+}
+
+
+@media (width < 786px) {
+
+  .CreateNewChrono--button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .CreateNewChrono--button:hover:not(:active) {
+    transform: unset;
+    border-width: 3px;
+    border-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CARD */
+
+.CreateNewChrono {
+  position: absolute;
+  height: 700px;
+  width: 800px;
+  max-width: 100vw;
+  bottom: -750px;
+
+  background-color: #fcfcf5;
+  padding: 10px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  transition: bottom 0.2s ease-in-out;
+
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.CreateNewChrono.open {
+  bottom: 0;
+}
+
+
+.CreateNewChrono header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.CreateNewChrono header button.close {
+  background: none;
+  border: none;
+  width: 50px;
+  width: 50px;
+
+
+}
+
+.CreateNewChrono header button.close img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.CreateNewChrono .form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  flex: 1;
+
+
+}
+
+
+.CreateNewChrono .form .input {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 50px;
+}
+
+
+.CreateNewChrono footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

@@ -1,0 +1,101 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: dark;
+  --background-color: #f2efe7;
+  --text-color: #e0e0e0;
+  --link-color: #8ab4f8;
+  --link-hover-color: #82aaff;
+
+  --max-width: 1200px;
+  --phone-width: 600px;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+
+  /* font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; */
+  font-family: Montserrat;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+input {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  width: 100%;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+input[type=color] {
+  padding: 0;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/* html,
+body,
+#root {
+  height: 100%;
+} */
+
+.App {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.App__content {
+  flex: 1;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .App__content {
+  overflow-x: auto;
+  background-color: ;
+} */
